@@ -1,0 +1,14 @@
+[project]
+name = "bondservice"
+version = "0.1.0"
+description = "Bond Service Interview Assignment"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=5.1.6",
+    "djangorestframework>=3.15.2",
+    "drf-yasg>=1.21.8",
+    "mypy>=1.15.0",
+    "pre-commit>=4.1.0",
+    "requests>=2.32.3",
+]
