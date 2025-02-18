@@ -10,5 +10,29 @@ dependencies = [
     "drf-yasg>=1.21.8",
     "mypy>=1.15.0",
     "pre-commit>=4.1.0",
+    "python-dateutil>=2.9.0.post0",
     "requests>=2.32.3",
 ]
+
+[tool.black]
+line-length = 120
+target_version = ["py311"]
+
+[tool.isort]
+py_version = "311"
+src_paths = "dj"
+multi_line_output = 3
+lines_after_imports = 2
+line_length = 120
+include_trailing_comma = true
+use_parentheses = true
+
+[tool.ruff]
+select = ["E", "F", "DJ", "S", "B", "W", "T20"]
+ignore = [
+    "S105",
+    "S106",
+]
+line-length = 120  # same as black
+target-version = "py311"
+exclude = ["*/migrations/*"]

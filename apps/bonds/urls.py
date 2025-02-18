@@ -1,7 +1,7 @@
+from apps.bonds.views import BondViewSet, PortfolioAnalysisView
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
-from .views import BondViewSet, PortfolioAnalysisView
 
 router = DefaultRouter()
 router.register(r"bonds", BondViewSet)
