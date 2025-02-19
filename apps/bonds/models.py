@@ -37,7 +37,6 @@ class Bond(models.Model):
 
     def clean(self):
         super().clean()
-        # TODO add to model field
         validate_maturity_date(self)
 
     """

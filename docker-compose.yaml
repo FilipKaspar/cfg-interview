@@ -1,0 +1,17 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: django_project
+    command: uv run python manage.py runserver 0.0.0.0:8000
+    restart: unless-stopped
+    ports:
+      - ${DJANGO_APP_PORT}:${DJANGO_APP_PORT}
+    env_file:
+      - .env
+#    In case we want our docker data sync with host data and vice versa
+#    Then it's also better to ignore .venv
+#    volumes:
+#      - .:/app

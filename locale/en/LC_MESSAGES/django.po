@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-18 16:59+0100\n"
+"POT-Creation-Date: 2025-02-19 18:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,70 +18,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: bonds/apps.py:8 bonds/models.py:13
+#: apps/bonds/apps.py:8 apps/bonds/models.py:33
 msgid "Bonds"
 msgstr "Bonds"
 
-#: bonds/enums.py:6
+#: apps/bonds/enums.py:6
 msgid "Annual"
 msgstr "Annual"
 
-#: bonds/enums.py:7
+#: apps/bonds/enums.py:7
 msgid "Semi-annual"
 msgstr "Semi-annual"
 
-#: bonds/enums.py:8
+#: apps/bonds/enums.py:8
 msgid "Quarterly"
 msgstr "Quarterly"
 
-#: bonds/enums.py:9
+#: apps/bonds/enums.py:9
 msgid "Monthly"
 msgstr "Monthly"
 
-#: bonds/models.py:12
-msgid "Bond"
-msgstr "Bond"
-
-#: bonds/models.py:15
+#: apps/bonds/models.py:12
 msgid "Issuer"
 msgstr "Issuer"
 
-#: bonds/models.py:16
+#: apps/bonds/models.py:13
 msgid "ISIN"
 msgstr "ISIN"
 
-#: bonds/models.py:17
+#: apps/bonds/models.py:14
 msgid "Face Value"
 msgstr "Face Value"
 
-#: bonds/models.py:18
+#: apps/bonds/models.py:15
 msgid "Bond Rate"
 msgstr "Bond Rate"
 
-#: bonds/models.py:19
+#: apps/bonds/models.py:16
 msgid "Date Added"
 msgstr "Date Added"
 
-#: bonds/models.py:20
+#: apps/bonds/models.py:17
 msgid "Maturity Date"
 msgstr "Maturity Date"
 
-#: bonds/models.py:22 users/models.py:7
+#: apps/bonds/models.py:22 apps/users/models.py:7
 msgid "User"
 msgstr "User"
 
-#: bonds/models.py:28
+#: apps/bonds/models.py:28
 msgid "Interest Frequency"
 msgstr "Interest Frequency"
 
-#: bondservice/settings.py:123
+#: apps/bonds/models.py:32
+msgid "Bond"
+msgstr "Bond"
+
+#: apps/bonds/serializers.py:18
+msgid "Nelze změnit vlastníka dluhopisu."
+msgstr "Nelze změnit vlastníka dluhopisu."
+
+#: apps/bonds/validators.py:9
+msgid "ISIN is not valid or is not in the list!"
+msgstr "ISIN is not valid or is not in the list!"
+
+#: apps/bonds/validators.py:14
+msgid "Maturity Date must be after Date Added!"
+msgstr "Maturity Date must be after Date Added!"
+
+#: apps/users/apps.py:8 apps/users/models.py:8
+msgid "Users"
+msgstr "Users"
+
+#: bondservice/settings.py:125
 msgid "English"
 msgstr "English"
 
-#: bondservice/settings.py:124
+#: bondservice/settings.py:126
 msgid "Czech"
 msgstr "Czech"
-
-#: users/apps.py:8 users/models.py:8
-msgid "Users"
-msgstr "Users"

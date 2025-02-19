@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-18 16:59+0100\n"
+"POT-Creation-Date: 2025-02-19 18:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,70 +19,82 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: bonds/apps.py:8 bonds/models.py:13
+#: apps/bonds/apps.py:8 apps/bonds/models.py:33
 msgid "Bonds"
 msgstr "Dluhopisy"
 
-#: bonds/enums.py:6
+#: apps/bonds/enums.py:6
 msgid "Annual"
 msgstr "Ročně"
 
-#: bonds/enums.py:7
+#: apps/bonds/enums.py:7
 msgid "Semi-annual"
 msgstr "Půlročně"
 
-#: bonds/enums.py:8
+#: apps/bonds/enums.py:8
 msgid "Quarterly"
 msgstr "Čtvrtletně"
 
-#: bonds/enums.py:9
+#: apps/bonds/enums.py:9
 msgid "Monthly"
 msgstr "Měsíčně"
 
-#: bonds/models.py:12
-msgid "Bond"
-msgstr "Dluhopis"
-
-#: bonds/models.py:15
+#: apps/bonds/models.py:12
 msgid "Issuer"
 msgstr "Název emise"
 
-#: bonds/models.py:16
+#: apps/bonds/models.py:13
 msgid "ISIN"
 msgstr "ISIN"
 
-#: bonds/models.py:17
+#: apps/bonds/models.py:14
 msgid "Face Value"
 msgstr "Hodnota dluhopisu"
 
-#: bonds/models.py:18
+#: apps/bonds/models.py:15
 msgid "Bond Rate"
 msgstr "Úrok dluhopisu"
 
-#: bonds/models.py:19
+#: apps/bonds/models.py:16
 msgid "Date Added"
 msgstr "Datum přidání"
 
-#: bonds/models.py:20
+#: apps/bonds/models.py:17
 msgid "Maturity Date"
 msgstr "Datum splatnosti"
 
-#: bonds/models.py:22 users/models.py:7
+#: apps/bonds/models.py:22 apps/users/models.py:7
 msgid "User"
 msgstr "Uživatel"
 
-#: bonds/models.py:28
+#: apps/bonds/models.py:28
 msgid "Interest Frequency"
 msgstr "Frekvence úroku"
 
-#: bondservice/settings.py:123
+#: apps/bonds/models.py:32
+msgid "Bond"
+msgstr "Dluhopis"
+
+#: apps/bonds/serializers.py:18
+msgid "Nelze změnit vlastníka dluhopisu."
+msgstr ""
+
+#: apps/bonds/validators.py:9
+msgid "ISIN is not valid or is not in the list!"
+msgstr "ISIN je nesprávný nebo není v seznamu!"
+
+#: apps/bonds/validators.py:14
+msgid "Maturity Date must be after Date Added!"
+msgstr "Datum splatnosti musí být nastaven po datu přidání!"
+
+#: apps/users/apps.py:8 apps/users/models.py:8
+msgid "Users"
+msgstr "Uživatelé"
+
+#: bondservice/settings.py:125
 msgid "English"
 msgstr "Angličtina"
 
-#: bondservice/settings.py:124
+#: bondservice/settings.py:126
 msgid "Czech"
 msgstr "Čeština"
-
-#: users/apps.py:8 users/models.py:8
-msgid "Users"
-msgstr "Uživatelé"

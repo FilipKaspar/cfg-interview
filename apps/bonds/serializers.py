@@ -1,4 +1,5 @@
 from apps.bonds.models import Bond
+from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
 
 
@@ -14,5 +15,5 @@ class BondSerializer(serializers.ModelSerializer):
 
     def validate_user(self, value):
         if self.instance and value != self.instance.user:
-            raise serializers.ValidationError("Nelze změnit vlastníka dluhopisu.")
+            raise serializers.ValidationError(_("Nelze změnit vlastníka dluhopisu."))
         return value

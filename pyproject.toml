@@ -1,5 +1,5 @@
 [project]
-name = "bondservice"
+name = "cfg-interview"
 version = "0.1.0"
 description = "Bond Service Interview Assignment"
 readme = "README.md"
